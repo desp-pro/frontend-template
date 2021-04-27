@@ -1,0 +1,40 @@
+{
+  "name": "mix",
+  "version": "1.0.0",
+  "description": "Front-end Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/webpack --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "Konstantin Chumachenko",
+  "homepage": "https://desp.pro/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/desp-pro/frontend-template.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "laravel-mix": "^6.0.18",
+    "laravel-mix-compress-images": "^1.0.4",
+    "laravel-mix-imagemin": "^1.0.3",
+    "mix-tailwindcss": "^1.3.0",
+    "postcss": "^8.2.13",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
+    "tailwindcss": "^2.1.2"
+  }
+}
