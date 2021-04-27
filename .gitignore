@@ -76,3 +76,4 @@ sw.*
 *.swp
 
 package-lock.json
+dist/
