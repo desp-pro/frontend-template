@@ -27,6 +27,7 @@
     "cross-env": "^7.0.3",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "jquery": "^3.6.0",
     "laravel-mix": "^6.0.18",
     "laravel-mix-compress-images": "^1.0.4",
     "laravel-mix-imagemin": "^1.0.3",

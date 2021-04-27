@@ -32007,13 +32007,6 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
-.test {
-  font-size: 100px;
-  text-align: center;
-  color: blue;
-  background-image: url(../images/sprite/telegram.svg);
-}
-
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

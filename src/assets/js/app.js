@@ -1,3 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.test').classList.add('dwefqwfd')
-})
+// jQuery global
+window.$ = window.jQuery = require('jquery');
+
+// Modules
+require('./example');

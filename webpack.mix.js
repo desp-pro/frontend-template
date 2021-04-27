@@ -34,11 +34,11 @@ mix.imagemin(
 );
 
 // Js
-mix.js("src/assets/js/app.js", "dist/assets/js/app.js");
+mix.js("src/assets/js/app.js", "dist/assets/js/app.js").sourceMaps();
 
 // Scss
 mix
-    .sass("src/assets/styles/app.scss", "dist/assets/css/")
+    .sass("src/assets/styles/app.scss", "dist/assets/css/").sourceMaps()
     .tailwind('./tailwind.config.js');
 
 mix.browserSync({
