@@ -6,11 +6,7 @@ module.exports = {
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {
-      extend: {
-        colors: {
-          'vika': "violet"
-        }
-      },
+      extend: {},
     },
     variants: {
       extend: {},
