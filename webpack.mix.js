@@ -1,5 +1,5 @@
 const mix = require("laravel-mix");
-const tailwindcss = require('tailwindcss');
+const tailwindcss = require("tailwindcss");
 
 // https://laravel-mix.com/extensions/imagemin
 require("laravel-mix-imagemin");
@@ -29,8 +29,7 @@ mix
   .js("src/assets/js/app.js", "dist/assets/js/app.js")
   .sass("src/assets/styles/app.scss", "dist/assets/css/")
   .options({
-    processCssUrls: false,
-    postCss: [ tailwindcss('./tailwind.config.js') ],
+    postCss: [tailwindcss("./tailwind.config.js")],
   })
   .browserSync({
     server: "dist",
