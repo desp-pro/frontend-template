@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Front-end Template - DESP.PRO</title>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<header class="header">
+		
+		<button class="option-button header__menu" id="menuButton" onclick="toggleMenu()">
+			<svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+		</button>
+		
+		<div class="options header__options">
+			<button class="option-button options__button" onclick="changeView('375')">
+				<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+					<path d="m352 8h-192a40.045 40.045 0 0 0 -40 40v416a40.045 40.045 0 0 0 40 40h192a40.045 40.045 0 0 0 40-40v-416a40.045 40.045 0 0 0 -40-40zm-41.758 16-4.8 24h-98.883l-4.8-24zm65.758 440a24.027 24.027 0 0 1 -24 24h-192a24.027 24.027 0 0 1 -24-24v-416a24.027 24.027 0 0 1 24-24h25.441l6.714 33.569a8 8 0 0 0 7.845 6.431h112a8 8 0 0 0 7.845-6.431l6.714-33.569h25.441a24.027 24.027 0 0 1 24 24z"/>
+					<path d="m208 456h-48a8 8 0 0 0 0 16h48a8 8 0 0 0 0-16z"/>
+					<path d="m240 456h-8a8 8 0 0 0 0 16h8a8 8 0 0 0 0-16z"/>
+				</svg>
+			</button>
+			
+			<button class="option-button options__button" onclick="changeView('768')">
+				<svg width="512" height="512" viewBox="0 0 512.088 512.088" xmlns="http://www.w3.org/2000/svg">
+					<g>
+						<path d="M408.074,0h-304.06C79.808,0,60.115,19.693,60.115,43.899v26.4c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-26.4   C75.115,27.964,88.079,15,104.014,15h304.06c15.935,0,28.899,12.964,28.899,28.899v424.29c0,15.935-12.964,28.899-28.899,28.899   h-304.06c-15.935,0-28.899-12.964-28.899-28.899v-367.89c0-4.142-3.358-7.5-7.5-7.5s-7.5,3.358-7.5,7.5v367.89   c0,24.206,19.693,43.899,43.899,43.899h304.06c24.206,0,43.899-19.693,43.899-43.899V43.899C451.973,19.693,432.28,0,408.074,0z"/>
+						<path d="M89.979,61.438v283.378c0,4.142,3.358,7.5,7.5,7.5c4.142,0,7.5-3.358,7.5-7.5V68.938h302.13v102.854   c0,4.142,3.358,7.5,7.5,7.5c4.142,0,7.5-3.358,7.5-7.5V61.438c0-4.142-3.358-7.5-7.5-7.5H97.479   C93.336,53.938,89.979,57.296,89.979,61.438z"/>
+						<path d="M89.979,432.02c0,4.142,3.358,7.5,7.5,7.5h317.13c4.142,0,7.5-3.358,7.5-7.5V201.792c0-4.142-3.358-7.5-7.5-7.5   c-4.142,0-7.5,3.358-7.5,7.5V424.52h-302.13v-49.703c0-4.142-3.358-7.5-7.5-7.5c-4.142,0-7.5,3.358-7.5,7.5V432.02z"/>
+						<path d="M233.196,466.529c0,12.599,10.249,22.848,22.848,22.848c12.599,0,22.848-10.249,22.848-22.848   c0-12.598-10.25-22.848-22.848-22.848C243.445,443.681,233.196,453.931,233.196,466.529z M263.892,466.529   c0,4.328-3.521,7.848-7.848,7.848c-4.328,0-7.848-3.52-7.848-7.848c0-4.327,3.52-7.848,7.848-7.848   C260.371,458.681,263.892,462.202,263.892,466.529z"/>
+						<path d="M288.448,41.817c4.142,0,7.5-3.358,7.5-7.5c0-4.142-3.358-7.5-7.5-7.5h-34.184c-4.142,0-7.5,3.358-7.5,7.5   c0,4.142,3.358,7.5,7.5,7.5H288.448z"/>
+						<circle cx="225.637" cy="34.285" r="7.5"/>
+					</g>
+				</svg>
+			</button>
+			
+			<button class="option-button options__button" onclick="changeView('1920')">
+				<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+					<path d="M476,48H36A28.031,28.031,0,0,0,8,76V372a28.031,28.031,0,0,0,28,28H198.24l-4.8,24H160a8,8,0,0,0-8,8v24a8,8,0,0,0,8,8H352a8,8,0,0,0,8-8V432a8,8,0,0,0-8-8H318.56l-4.8-24H476a28.031,28.031,0,0,0,28-28V76A28.031,28.031,0,0,0,476,48ZM344,440v8H168v-8ZM209.76,424l4.8-24h82.88l4.8,24ZM488,372a12.01,12.01,0,0,1-12,12H36a12.01,12.01,0,0,1-12-12V352H488Zm0-36H24V76A12.01,12.01,0,0,1,36,64H476a12.01,12.01,0,0,1,12,12Z"/>
+					<path d="M264,360H248a8,8,0,0,0,0,16h16a8,8,0,0,0,0-16Z"/>
+				</svg>
+			</button>
+		</div>
+		
+		<div class="header__feedback">
+			<a href="" class="telegram-button ">Заказать верстку</a>
+		</div>
+		
+	</header>
+	<div class="content">
+		<aside class="aside">
+			<nav class="navigation aside__nav">
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<span class="navigation__link" onclick="navTo('http://mute-cemetery.surge.sh/')">index</span>
+						<a href="http://mute-cemetery.surge.sh/" target="_blank" class="navigation__option"></a>
+					</li>
+					<li class="navigation__item">
+						<span class="navigation__link" onclick="navTo('http://mute-cemetery.surge.sh/news-page.html')">News Page</span>
+						<a href="http://mute-cemetery.surge.sh/news-page.html" target="_blank" class="navigation__option"></a>
+					</li>
+					<li class="navigation__item">
+						<span onclick="navTo('http://mute-cemetery.surge.sh/news.html')" class="navigation__link">News</span>
+						<a href="http://mute-cemetery.surge.sh/news.html" target="_blank" class="navigation__option"></a>
+					</li>
+					<li class="navigation__item">
+						<span onclick="navTo('http://mute-cemetery.surge.sh/solana.html')" class="navigation__link">Solana</span>
+						<a href="http://mute-cemetery.surge.sh/solana.html" target="_blank" class="navigation__option"></a>
+					</li>
+					<li class="navigation__item">
+						<span onclick="navTo('http://mute-cemetery.surge.sh/free-ton.html')" class="navigation__link">Free Ton</span>
+						<a href="http://mute-cemetery.surge.sh/free-ton.html" target="_blank" class="navigation__option"></a>
+					</li>
+					<li class="navigation__item">
+						<span onclick="navTo('http://mute-cemetery.surge.sh/about.html')" class="navigation__link">About</span>
+						<a href="http://mute-cemetery.surge.sh/about.html" target="_blank" class="navigation__option"></a>
+					</li>
+					<li class="navigation__item">
+						<span onclick="navTo('http://mute-cemetery.surge.sh/contacts.html')" class="navigation__link">Contacts</span>
+						<a href="http://mute-cemetery.surge.sh/contacts.html" target="_blank" class="navigation__option"></a>
+					</li>
+					<li class="navigation__item">
+						<span onclick="navTo('http://mute-cemetery.surge.sh/privacy-policy.html')" class="navigation__link">Privacy Policy</span>
+						<a href="http://mute-cemetery.surge.sh/privacy-policy.html" target="_blank" class="navigation__option"></a>
+					</li>
+					<li class="navigation__item">
+						<span onclick="navTo('http://mute-cemetery.surge.sh/terms-of-use.html')" class="navigation__link">Terms Of Use</span>
+						<a href="http://mute-cemetery.surge.sh/terms-of-use.html" target="_blank" class="navigation__option"></a>
+					</li>
+				</ul>
+			</nav>
+			<a href="" class="telegram-button aside__feedback">Заказать верстку</a>
+			<div class="aside__copyright">
+				<a href="https://desp.pro/">DESP.PRO</a>
+			</div>
+		</aside>
+		<main class="main">
+			
+			<iframe class="preview" src="http://mute-cemetery.surge.sh/"></iframe>
+			
+		</main>
+	</div>
+
+</div>
+
+<script>
+    const toggleMenu = () => {
+        const aside = document.querySelector('.aside')
+        const menuButton = document.querySelector('#menuButton')
+        aside.classList.toggle("aside--active")
+        menuButton.classList.toggle("option-button--active")
+	}
+    const changeView = (size) => {
+        const scale = () => {
+            const main = document.querySelector('.main')
+            const preview = document.querySelector('.preview')
+            const mainHeight = main.clientHeight
+            const windowWidth = window.innerWidth
+            if (windowWidth < size) {
+                preview.setAttribute("style", `
+				width: ${size}px;
+				height: ${mainHeight / (windowWidth / size)}px;
+				transform: translate(-50%, -50%) scale(${windowWidth / size});
+        	`);
+                return false
+            }
+            preview.setAttribute("style", `max-width: ${size}px; height: 100%; transform: translate(-50%, -50%) scale(1);`)
+		}
+        scale()
+        window.addEventListener('resize', scale)
+    }
+    const navTo = (link) => {
+        const preview = document.querySelector('.preview')
+        preview.src = link
+        toggleMenu()
+	}
+</script>
+</body>
+</html>

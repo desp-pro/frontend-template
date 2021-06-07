@@ -1,6 +1,7 @@
 module.exports = {
+    // mode: 'jit',
     purge: [
-      './dist/**/*.{vue,js,ts,jsx,tsx,blade.php,html}'
+      './src/**/*.{js,html}'
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {
